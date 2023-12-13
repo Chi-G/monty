@@ -1,5 +1,4 @@
 #include "monty.h"
-bus_t bus = {NULL, NULL, NULL, 0};
 
 /**
 * main - func monty code interpreter
@@ -9,6 +8,8 @@ bus_t bus = {NULL, NULL, NULL, 0};
 */
 int main(int argc, char *argv[])
 {
+	bus_t bus = {NULL, NULL, NULL, 0};
+
 	char *content;
 	FILE *file;
 	size_t size = 0;
@@ -42,6 +43,5 @@ int main(int argc, char *argv[])
 	}
 	free_stack(stack);
 	fclose(file);
-
-	return (0);
+return (0);
 }
